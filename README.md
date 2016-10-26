@@ -30,5 +30,5 @@ Create `ruleset.xml` in root of your project.
 </ruleset>
 ```
 
-Call phpcs by wrapper `vendor/bin/codesniffer <folder>`.
-Call phpcbf by wrapper `vendor/bin/codesniffer <folder>`.
+- Call phpcs by wrapper `vendor/bin/codesniffer <folder>`.
+- Call phpcbf by wrapper `vendor/bin/codesniffer <folder>`.
