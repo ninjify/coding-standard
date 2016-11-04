@@ -1,17 +1,19 @@
 {
   "name": "ninjify/coding-standard",
   "description": "Tuned & very strict coding standards for PHP projects",
+  "keywords": ["codesniffer", "strict", "php"],
   "type": "library",
   "license": ["MIT"],
   "homepage": "https://github.com/ninjify/coding-standard",
   "authors": [
     {
       "name": "Milan Felix Sulc",
-      "homepage": "http://jfx.cz"
+      "homepage": "https://jfx.cz"
     }
   ],
   "require": {
     "php": ">=5.6",
-    "slevomat/coding-standard": "^1.1.1"
+    "slevomat/coding-standard": "^1.1.1",
+    "squizlabs/php_codesniffer": "^2.7.0"
   }
 }
