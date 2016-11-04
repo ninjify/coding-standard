@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ruleset name="Ninjify">
-    <description>Ninjify/CodingStandard - Tuned and very strict coding standards for PHP projects</description>
     <!-- Heavily inspired by consistence/coding-standard and slevomat/coding-standard thank you guys! <3 -->
-
+    <description>Ninjify/CodingStandard - Tuned and very strict coding standards for PHP projects</description>
+    <!-- ########################################################################################################### -->
+    <!-- Ninjify -->
+    <!-- ########################################################################################################### -->
     <rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
     <rule ref="Generic.Classes.DuplicateClassName"/>
     <rule ref="Generic.CodeAnalysis.EmptyStatement">
@@ -167,7 +169,9 @@
         <severity>5</severity><!-- turned off by PSR2 -> turning on with default severity -->
     </rule>
 
+    <!-- ########################################################################################################### -->
     <!-- Slevomat Coding Standard -->
+    <!-- ########################################################################################################### -->
     <rule ref="vendor/slevomat/coding-standard/SlevomatCodingStandard/ruleset.xml">
         <exclude name="SlevomatCodingStandard.Files.TypeNameMatchesFileName"/>
         <exclude name="SlevomatCodingStandard.Namespaces.FullyQualifiedExceptions"/>
