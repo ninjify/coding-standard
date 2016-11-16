@@ -13,6 +13,13 @@ Tuned & very strict coding standards for PHP projects
 composer require --dev ninjify/coding-standard
 ```
 
+## Strictness
+
+| File          | Strictness |
+|---------------|------------|
+| ruleset       | strict     |
+| ruleset-nette | 90%        |
+
 ## Usage
 
 Create `ruleset.xml` in root of your project.
