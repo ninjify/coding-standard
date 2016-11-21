@@ -16,7 +16,6 @@
     <rule ref="Generic.Commenting.DocComment">
         <exclude name="Generic.Commenting.DocComment.MissingShort"/>
         <exclude name="Generic.Commenting.DocComment.TagValueIndent"/>
-        <exclude name="Generic.Commenting.DocComment.SpacingBeforeTags"/>
         <exclude name="Generic.Commenting.DocComment.LongNotCapital"/>
         <exclude name="Generic.Commenting.DocComment.ShortNotCapital"/>
         <exclude name="Generic.Commenting.DocComment.TagsNotGrouped"/>
