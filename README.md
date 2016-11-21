@@ -28,7 +28,7 @@ Create `ruleset.xml` in root of your project.
 <?xml version="1.0"?>
 <ruleset name="YourProject">
     <!-- Extending rulesets -->
-    <rule ref="./../../ninjify/coding-standard/ruleset.xml" />
+    <rule ref="vendor/ninjify/coding-standard/ruleset.xml" />
 
     <!-- My rules -->
     
