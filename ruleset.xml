@@ -172,6 +172,7 @@
     <!-- Slevomat Coding Standard -->
     <!-- ########################################################################################################### -->
     <rule ref="./../../slevomat/coding-standard/SlevomatCodingStandard/ruleset.xml">
+        <exclude name="SlevomatCodingStandard.Namespaces.TypeNameMatchesFileName"/>
         <exclude name="SlevomatCodingStandard.Namespaces.FullyQualifiedExceptions"/>
         <exclude name="SlevomatCodingStandard.Namespaces.FullyQualifiedClassNameAfterKeyword"/>
         <exclude name="SlevomatCodingStandard.Namespaces.UseOnlyWhitelistedNamespaces"/>
@@ -189,10 +190,10 @@
             <property name="allowPartialUses" value="false"/>
         </properties>
     </rule>
-    <rule ref="SlevomatCodingStandard.Files.TypeNameMatchesFileName">
-        <properties>
-            <property name="rootNamespaces" type="array" value="app=>App"/>
-            <property name="skipDirs" type="array" value="tests"/>
-        </properties>
-    </rule>
+    <!--<rule ref="SlevomatCodingStandard.Files.TypeNameMatchesFileName">-->
+        <!--<properties>-->
+            <!--<property name="rootNamespaces" type="array" value="app=>App"/>-->
+            <!--<property name="skipDirs" type="array" value="tests"/>-->
+        <!--</properties>-->
+    <!--</rule>-->
 </ruleset>
