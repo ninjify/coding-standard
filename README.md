@@ -36,4 +36,3 @@ Create `ruleset.xml` in root of your project.
     <exclude-pattern>/tests/tmp</exclude-pattern>
 </ruleset>
 ```
-
