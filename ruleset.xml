@@ -117,6 +117,7 @@
     </rule>
     <rule ref="Squiz.Commenting.VariableComment">
         <exclude name="Squiz.Commenting.VariableComment.IncorrectVarType"/><!-- don't force int=>integer, bool=>boolean -->
+        <exclude name="Squiz.Commenting.VariableComment.TagNotAllowed"/>
     </rule>
     <rule ref="Squiz.Functions.GlobalFunction"/>
     <rule ref="Squiz.Operators.IncrementDecrementUsage">
@@ -169,13 +170,17 @@
     </rule>
 
     <!-- ########################################################################################################### -->
-    <!-- Slevomat Coding Standard -->
+    <!-- Slevomat Coding Standard 2.0 -->
     <!-- ########################################################################################################### -->
     <rule ref="./../../slevomat/coding-standard/SlevomatCodingStandard/ruleset.xml">
-        <exclude name="SlevomatCodingStandard.Namespaces.TypeNameMatchesFileName"/>
-        <exclude name="SlevomatCodingStandard.Namespaces.FullyQualifiedExceptions"/>
+        <exclude name="SlevomatCodingStandard.Files.TypeNameMatchesFileName"/>
+        <exclude name="SlevomatCodingStandard.Namespaces.FullyQualifiedClassNameInAnnotation.NonFullyQualifiedClassName"/>
+        <exclude name="SlevomatCodingStandard.Namespaces.FullyQualifiedExceptions.NonFullyQualifiedException"/>
         <exclude name="SlevomatCodingStandard.Namespaces.FullyQualifiedClassNameAfterKeyword"/>
         <exclude name="SlevomatCodingStandard.Namespaces.UseOnlyWhitelistedNamespaces"/>
+        <exclude name="SlevomatCodingStandard.TypeHints.TypeHintDeclaration.UselessDocComment"/>
+        <exclude name="SlevomatCodingStandard.TypeHints.TypeHintDeclaration.MissingTraversableReturnTypeHintSpecification"/>
+        <exclude name="SlevomatCodingStandard.TypeHints.TypeHintDeclaration.MissingTraversableParameterTypeHintSpecification"/>
     </rule>
     <rule ref="SlevomatCodingStandard.Namespaces.UnusedUses">
         <properties>
