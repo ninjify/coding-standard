@@ -29,6 +29,8 @@ Create `ruleset.xml` in root of your project.
 <ruleset name="YourProject">
     <!-- Extending rulesets -->
     <rule ref="vendor/ninjify/coding-standard/ruleset.xml"/>
+    <!-- Ninjify [Nette] -->
+    <!-- <rule ref="vendor/ninjify/coding-standard/ruleset-nette.xml"/> -->
 
     <!-- My rules -->
     
