@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset name="Contributte">
+    <!-- ########################################################################################################### -->
+    <!-- Ninjify Coding Standard -->
+    <!-- ########################################################################################################### -->
+    <rule ref="./ruleset.xml"/>
+
+    <!-- ########################################################################################################### -->
+    <!-- Contributte Coding Standard -->
+    <!-- ########################################################################################################### -->
+    <rule ref="Generic.WhiteSpace.ScopeIndent">
+        <properties>
+            <property name="indent" value="4"/>
+            <property name="tabIndent" value="true"/>
+        </properties>
+    </rule>
+    <rule ref="Generic.WhiteSpace.DisallowSpaceIndent"/>
+</ruleset>
