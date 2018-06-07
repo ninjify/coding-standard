@@ -27,6 +27,7 @@
         <exclude name="Generic.Commenting.DocComment.NonParamGroup"/>
         <exclude name="Generic.Commenting.DocComment.ContentAfterOpen"/>
         <exclude name="Generic.Commenting.DocComment.ContentBeforeClose"/>
+        <exclude name="Generic.Commenting.DocComment.SpacingBeforeTags"/>
     </rule>
     <rule ref="Generic.Files.InlineHTML"/>
     <rule ref="Generic.Formatting.SpaceAfterCast"/>
