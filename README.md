@@ -40,3 +40,7 @@ Create `ruleset.xml` in root of your project.
     <exclude-pattern>/tests/tmp</exclude-pattern>
 </ruleset>
 ```
+
+## Integration
+
+Take a look at `phpstorm` folder, there should be prepared codestyle.
