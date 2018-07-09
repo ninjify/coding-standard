@@ -227,6 +227,7 @@
         <exclude name="SlevomatCodingStandard.ControlStructures.EarlyExit"/>
         <exclude name="SlevomatCodingStandard.ControlStructures.EarlyExit.EarlyExitNotUsed"/>
         <exclude name="SlevomatCodingStandard.ControlStructures.RequireYodaComparison.RequiredYodaComparison"/>
+        <exclude name="SlevomatCodingStandard.Operators.DisallowIncrementAndDecrementOperators.DisallowedPostIncrementOperator"/>
     </rule>
     <rule ref="SlevomatCodingStandard.Arrays.TrailingArrayComma"/>
     <rule ref="SlevomatCodingStandard.Classes.ClassConstantVisibility">
