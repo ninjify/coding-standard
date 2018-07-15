@@ -330,6 +330,7 @@
     <rule ref="SlevomatCodingStandard.TypeHints.TypeHintDeclaration">
         <properties>
             <property name="enableEachParameterAndReturnInspection" value="true"/>
+            <property name="allAnnotationsAreUseful" value="true"/>
         </properties>
     </rule>
     <rule ref="SlevomatCodingStandard.Types.EmptyLinesAroundTypeBraces">
