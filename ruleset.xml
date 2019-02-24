@@ -237,11 +237,21 @@
         <exclude name="SlevomatCodingStandard.PHP.UselessParentheses.UselessParentheses"/>
         <exclude name="SlevomatCodingStandard.Variables.UnusedVariable.UnusedVariable"/>
         <exclude name="SlevomatCodingStandard.Variables.UselessVariable.UselessVariable"/>
+        <exclude name="SlevomatCodingStandard.TypeHints.DisallowMixedTypeHint.DisallowedMixedTypeHint"/>
+        <exclude name="SlevomatCodingStandard.TypeHints.DisallowMixedTypeHint.DisallowedMixedTypeHint"/> <!-- Mixed is used too often - in all configurations -->
+        <exclude name="SlevomatCodingStandard.TypeHints.DisallowArrayTypeHintSyntax.DisallowedArrayTypeHintSyntax"/> <!-- Disabled until generics are widely supported -->
+        <exclude name="SlevomatCodingStandard.Functions.TrailingCommaInCall.MissingTrailingComma"/> <!-- Disabled for support of php < 7.3 -->
     </rule>
     <rule ref="SlevomatCodingStandard.Arrays.TrailingArrayComma"/>
     <rule ref="SlevomatCodingStandard.Classes.ClassConstantVisibility">
         <properties>
             <property name="fixable" type="boolean" value="true"/>
+        </properties>
+    </rule>
+    <rule ref="SlevomatCodingStandard.Classes.EmptyLinesAroundClassBraces">
+        <properties>
+            <property name="linesCountAfterOpeningBrace" value="1"/>
+            <property name="linesCountBeforeClosingBrace" value="1"/>
         </properties>
     </rule>
     <rule ref="SlevomatCodingStandard.Classes.UnusedPrivateElements"/>
@@ -283,7 +293,6 @@
     <rule ref="SlevomatCodingStandard.Commenting.RequireOneLinePropertyDocComment"/>
     <rule ref="SlevomatCodingStandard.ControlStructures.AssignmentInCondition"/>
     <rule ref="SlevomatCodingStandard.ControlStructures.DisallowYodaComparison"/>
-    <rule ref="SlevomatCodingStandard.ControlStructures.DisallowEqualOperators"/>
     <rule ref="SlevomatCodingStandard.ControlStructures.EarlyExit"/>
     <rule ref="SlevomatCodingStandard.ControlStructures.LanguageConstructWithParentheses"/>
     <rule ref="SlevomatCodingStandard.ControlStructures.NewWithParentheses"/>
@@ -321,6 +330,7 @@
             <property name="linesCountBetweenUseTypes" value="0"/>
         </properties>
     </rule>
+    <rule ref="SlevomatCodingStandard.Operators.DisallowEqualOperators"/>
     <rule ref="SlevomatCodingStandard.PHP.TypeCast"/>
     <rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes">
         <properties>
@@ -341,12 +351,6 @@
         <properties>
             <property name="enableEachParameterAndReturnInspection" value="true"/>
             <property name="allAnnotationsAreUseful" value="true"/>
-        </properties>
-    </rule>
-    <rule ref="SlevomatCodingStandard.Types.EmptyLinesAroundTypeBraces">
-        <properties>
-            <property name="linesCountAfterOpeningBrace" value="1"/>
-            <property name="linesCountBeforeClosingBrace" value="1"/>
         </properties>
     </rule>
 </ruleset>
