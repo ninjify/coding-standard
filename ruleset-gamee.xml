@@ -37,8 +37,6 @@
 		<exclude name="SlevomatCodingStandard.Namespaces.UseOnlyWhitelistedNamespaces"/>
 		<exclude name="SlevomatCodingStandard.Namespaces.FullyQualifiedGlobalConstants.NonFullyQualified"/>
 		<exclude name="SlevomatCodingStandard.Namespaces.ReferenceUsedNamesOnly.ReferenceViaFullyQualifiedNameWithoutNamespace"/>
-		<exclude name="SlevomatCodingStandard.Types.EmptyLinesAroundTypeBraces.NoEmptyLineBeforeClosingBrace"/>
-		<exclude name="SlevomatCodingStandard.Types.EmptyLinesAroundTypeBraces.NoEmptyLineAfterOpeningBrace"/>
 		<exclude name="SlevomatCodingStandard.TypeHints.TypeHintDeclaration.MissingParameterTypeHint"/>
 		<exclude name="SlevomatCodingStandard.TypeHints.TypeHintDeclaration.MissingParameterTypeHint.WhitespaceBeforeColon"/>
 		<exclude name="SlevomatCodingStandard.Commenting.RequireOneLinePropertyDocComment.MultiLinePropertyComment"/>
@@ -56,8 +54,13 @@
 		<exclude name="SlevomatCodingStandard.ControlStructures.NewWithoutParentheses.UselessParentheses"/>
 		<exclude name="SlevomatCodingStandard.Functions.StaticClosure.ClosureNotStatic"/>
 		<exclude name="SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter"/>
+		<exclude name="SlevomatCodingStandard.Functions.TrailingCommaInCall.MissingTrailingComma"/>
 		<exclude name="SlevomatCodingStandard.ControlStructures.RequireTernaryOperator.TernaryOperatorNotUsed"/>
 		<exclude name="SlevomatCodingStandard.ControlStructures.ControlStructureSpacing.IncorrectLinesCountBeforeControlStructure"/>
+		<exclude name="SlevomatCodingStandard.Classes.EmptyLinesAroundClassBraces.NoEmptyLineBeforeClosingBrace"/>
+		<exclude name="SlevomatCodingStandard.TypeHints.DisallowMixedTypeHint.DisallowedMixedTypeHint"/>
+		<exclude name="SlevomatCodingStandard.TypeHints.DisallowArrayTypeHintSyntax"/>
+		<rule ref="SlevomatCodingStandard.Classes.EmptyLinesAroundClassBraces.IncorrectEmptyLinesBeforeClosingBrace"/>
 	</rule>
 	<rule ref="SlevomatCodingStandard.Classes.UnusedPrivateElements">
 		<properties>
