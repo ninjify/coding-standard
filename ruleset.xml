@@ -241,6 +241,7 @@
         <exclude name="SlevomatCodingStandard.PHP.UselessParentheses.UselessParentheses"/>
         <exclude name="SlevomatCodingStandard.Variables.UnusedVariable.UnusedVariable"/>
         <exclude name="SlevomatCodingStandard.Variables.UselessVariable.UselessVariable"/>
+        <exclude name="SlevomatCodingStandard.Functions.UselessParameterDefaultValue"/>
         <exclude name="SlevomatCodingStandard.TypeHints.DisallowMixedTypeHint.DisallowedMixedTypeHint"/> <!-- Mixed is used too often - in all configurations -->
         <exclude name="SlevomatCodingStandard.TypeHints.DisallowArrayTypeHintSyntax.DisallowedArrayTypeHintSyntax"/> <!-- Disabled until generics are widely supported -->
     </rule>
