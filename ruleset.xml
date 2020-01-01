@@ -268,7 +268,6 @@
     <rule ref="SlevomatCodingStandard.Commenting.InlineDocCommentDeclaration"/>
     <rule ref="SlevomatCodingStandard.Commenting.RequireOneLinePropertyDocComment"/>
     <rule ref="SlevomatCodingStandard.ControlStructures.DisallowYodaComparison"/>
-    <rule ref="SlevomatCodingStandard.ControlStructures.EarlyExit"/>
     <rule ref="SlevomatCodingStandard.ControlStructures.LanguageConstructWithParentheses"/>
     <rule ref="SlevomatCodingStandard.ControlStructures.NewWithParentheses"/>
     <rule ref="SlevomatCodingStandard.ControlStructures.RequireNullCoalesceOperator"/>
@@ -370,10 +369,6 @@
     <rule ref="SlevomatCodingStandard.Namespaces.NamespaceSpacing"/>
     <rule ref="SlevomatCodingStandard.Namespaces.RequireOneNamespaceInFile"/>
     <rule ref="SlevomatCodingStandard.Namespaces.UselessAlias"/>
-    <rule ref="SlevomatCodingStandard.Operators.DisallowIncrementAndDecrementOperators">
-        <exclude name="SlevomatCodingStandard.Operators.DisallowIncrementAndDecrementOperators.DisallowedPreIncrementOperator"/>
-        <exclude name="SlevomatCodingStandard.Operators.DisallowIncrementAndDecrementOperators.DisallowedPostIncrementOperator"/>
-    </rule>
     <rule ref="SlevomatCodingStandard.Operators.RequireCombinedAssignmentOperator"/>
     <rule ref="SlevomatCodingStandard.Operators.SpreadOperatorSpacing"/>
     <rule ref="SlevomatCodingStandard.PHP.OptimizedFunctionsWithoutUnpacking"/>
@@ -389,6 +384,7 @@
     </rule>
     <rule ref="SlevomatCodingStandard.Variables.UselessVariable"/>
 
+<!--    <rule ref="SlevomatCodingStandard.ControlStructures.EarlyExit"/>-->
 <!--    <rule ref="SlevomatCodingStandard.ControlStructures.AssignmentInCondition"/>-->
 <!--    <rule ref="SlevomatCodingStandard.ControlStructures.DisallowShortTernaryOperator"/>-->
 <!--    <rule ref="SlevomatCodingStandard.ControlStructures.RequireYodaComparison"/>-->
@@ -398,7 +394,7 @@
 <!--    <rule ref="SlevomatCodingStandard.PHP.UselessParentheses"/>-->
 <!--    <rule ref="SlevomatCodingStandard.Files.TypeNameMatchesFileName"/> project based -->
 <!--    <rule ref="SlevomatCodingStandard.Namespaces.UseOnlyWhitelistedNamespaces"/> project based -->
-<!--    <rule ref="SlevomatCodingStandard.ControlStructures.EarlyExit"/>-->
+<!--    <rule ref="SlevomatCodingStandard.Operators.DisallowIncrementAndDecrementOperators"/>-->
 <!--    <rule ref="SlevomatCodingStandard.Operators.RequireOnlyStandaloneIncrementAndDecrementOperators"/>-->
 <!--    <rule ref="SlevomatCodingStandard.Functions.TrailingCommaInCall"/>-->
 <!--    <rule ref="SlevomatCodingStandard.Functions.UnusedParameter"/>-->
@@ -406,8 +402,8 @@
     <!-- 6.0.0 php7.4 -->
     <rule ref="SlevomatCodingStandard.Functions.RequireArrowFunction"/>
 <!--    <rule ref="SlevomatCodingStandard.Functions.DisallowArrowFunction"/>-->
-    <rule ref="SlevomatCodingStandard.Numbers.RequireNumericLiteralSeparator"/>
-<!--    <rule ref="SlevomatCodingStandard.Numbers.DisallowNumericLiteralSeparator"/>-->
+<!--    <rule ref="SlevomatCodingStandard.Numbers.RequireNumericLiteralSeparator"/>-->
+    <rule ref="SlevomatCodingStandard.Numbers.DisallowNumericLiteralSeparator"/>
     <rule ref="SlevomatCodingStandard.PHP.RequireNowdoc"/>
     <rule ref="SlevomatCodingStandard.PHP.ReferenceSpacing"/>
     <rule ref="SlevomatCodingStandard.PHP.DisallowReference"/>
