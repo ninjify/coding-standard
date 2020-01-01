@@ -156,6 +156,8 @@
     <rule ref="Squiz.Commenting.VariableComment">
         <exclude name="Squiz.Commenting.VariableComment.IncorrectVarType"/><!-- don't force int=>integer, bool=>boolean -->
         <exclude name="Squiz.Commenting.VariableComment.TagNotAllowed"/>
+        <exclude name="Squiz.Commenting.VariableComment.MissingVar"/><!-- no need for typed properties -->
+        <exclude name="Squiz.Commenting.VariableComment.Missing"/><!-- no need for typed properties -->
     </rule>
     <rule ref="Squiz.Functions.GlobalFunction"/>
     <rule ref="Squiz.Operators.IncrementDecrementUsage">
@@ -321,12 +323,6 @@
             <property name="spacesCountBeforeColon" value="0"/>
         </properties>
     </rule>
-    <rule ref="SlevomatCodingStandard.TypeHints.TypeHintDeclaration">
-        <properties>
-            <property name="enableEachParameterAndReturnInspection" value="true"/>
-            <property name="allAnnotationsAreUseful" value="true"/>
-        </properties>
-    </rule>
     <rule ref="SlevomatCodingStandard.Arrays.DisallowImplicitArrayCreation"/>
     <rule ref="SlevomatCodingStandard.Classes.DisallowLateStaticBindingForConstants"/>
     <rule ref="SlevomatCodingStandard.Classes.ModernClassNameReference"/>
@@ -340,9 +336,6 @@
     <rule ref="SlevomatCodingStandard.Commenting.DocCommentSpacing"/>
     <rule ref="SlevomatCodingStandard.Commenting.UselessInheritDocComment">
         <exclude name="SlevomatCodingStandard.Commenting.UselessInheritDocComment.UselessInheritDocComment"/>
-    </rule>
-    <rule ref="SlevomatCodingStandard.ControlStructures.ControlStructureSpacing">
-        <exclude name="SlevomatCodingStandard.ControlStructures.ControlStructureSpacing.IncorrectLinesCountBeforeControlStructure"/>
     </rule>
     <rule ref="SlevomatCodingStandard.ControlStructures.DisallowContinueWithoutIntegerOperandInSwitch"/>
     <rule ref="SlevomatCodingStandard.ControlStructures.NewWithoutParentheses">
@@ -389,6 +382,12 @@
     <rule ref="SlevomatCodingStandard.TypeHints.NullTypeHintOnLastPosition"/>
     <rule ref="SlevomatCodingStandard.TypeHints.UselessConstantTypeHint"/>
     <rule ref="SlevomatCodingStandard.Variables.DuplicateAssignmentToVariable"/>
+    <rule ref="SlevomatCodingStandard.Variables.UnusedVariable">
+        <properties>
+            <property name="ignoreUnusedValuesWhenOnlyKeysAreUsedInForeach" type="boolean" value="true"/>
+        </properties>
+    </rule>
+    <rule ref="SlevomatCodingStandard.Variables.UselessVariable"/>
 
 <!--    <rule ref="SlevomatCodingStandard.ControlStructures.AssignmentInCondition"/>-->
 <!--    <rule ref="SlevomatCodingStandard.ControlStructures.DisallowShortTernaryOperator"/>-->
@@ -397,12 +396,61 @@
 <!--    <rule ref="SlevomatCodingStandard.TypeHints.DisallowArrayTypeHintSyntax"/>-->
 <!--    <rule ref="SlevomatCodingStandard.TypeHints.DisallowMixedTypeHint"/>-->
 <!--    <rule ref="SlevomatCodingStandard.PHP.UselessParentheses"/>-->
-<!--    <rule ref="SlevomatCodingStandard.Variables.UnusedVariable"/>-->
-<!--    <rule ref="SlevomatCodingStandard.Variables.UselessVariable"/>-->
-<!--    <rule ref="SlevomatCodingStandard.Files.TypeNameMatchesFileName"/>-->
-<!--    <rule ref="SlevomatCodingStandard.Namespaces.UseOnlyWhitelistedNamespaces"/>-->
+<!--    <rule ref="SlevomatCodingStandard.Files.TypeNameMatchesFileName"/> project based -->
+<!--    <rule ref="SlevomatCodingStandard.Namespaces.UseOnlyWhitelistedNamespaces"/> project based -->
 <!--    <rule ref="SlevomatCodingStandard.ControlStructures.EarlyExit"/>-->
 <!--    <rule ref="SlevomatCodingStandard.Operators.RequireOnlyStandaloneIncrementAndDecrementOperators"/>-->
 <!--    <rule ref="SlevomatCodingStandard.Functions.TrailingCommaInCall"/>-->
 <!--    <rule ref="SlevomatCodingStandard.Functions.UnusedParameter"/>-->
+
+    <!-- 6.0.0 php7.4 -->
+    <rule ref="SlevomatCodingStandard.Functions.RequireArrowFunction"/>
+<!--    <rule ref="SlevomatCodingStandard.Functions.DisallowArrowFunction"/>-->
+    <rule ref="SlevomatCodingStandard.Numbers.RequireNumericLiteralSeparator"/>
+<!--    <rule ref="SlevomatCodingStandard.Numbers.DisallowNumericLiteralSeparator"/>-->
+    <rule ref="SlevomatCodingStandard.PHP.RequireNowdoc"/>
+    <rule ref="SlevomatCodingStandard.PHP.ReferenceSpacing"/>
+    <rule ref="SlevomatCodingStandard.PHP.DisallowReference"/>
+    <rule ref="SlevomatCodingStandard.PHP.RequireExplicitAssertion"/>
+    <rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHint">
+        <properties>
+            <property name="traversableTypeHints" type="array">
+                <element value="Traversable"/>
+            </property>
+        </properties>
+    </rule>
+    <rule ref="SlevomatCodingStandard.TypeHints.PropertyTypeHint">
+        <properties>
+            <property name="traversableTypeHints" type="array">
+                <element value="Traversable"/>
+            </property>
+        </properties>
+    </rule>
+    <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHint">
+        <properties>
+            <property name="traversableTypeHints" type="array">
+                <element value="Traversable"/>
+            </property>
+        </properties>
+    </rule>
+    <rule ref="SlevomatCodingStandard.Commenting.UselessFunctionDocComment">
+        <properties>
+            <property name="traversableTypeHints" type="array">
+                <element value="Traversable"/>
+            </property>
+        </properties>
+    </rule>
+    <rule ref="SlevomatCodingStandard.ControlStructures.BlockControlStructureSpacing">
+        <exclude name="SlevomatCodingStandard.ControlStructures.BlockControlStructureSpacing.IncorrectLinesCountBeforeControlStructure"/>
+    </rule>
+    <rule ref="SlevomatCodingStandard.ControlStructures.JumpStatementsSpacing">
+        <properties>
+            <property name="tokensToCheck" type="array">
+                <element value="T_BREAK"/>
+                <element value="T_CONTINUE"/>
+                <element value="T_RETURN"/>
+                <element value="T_THROW"/>
+            </property>
+        </properties>
+    </rule>
 </ruleset>
