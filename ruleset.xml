@@ -383,59 +383,66 @@
         </properties>
     </rule>
     <rule ref="SlevomatCodingStandard.Variables.UselessVariable"/>
-
-<!--    <rule ref="SlevomatCodingStandard.ControlStructures.EarlyExit"/>-->
-<!--    <rule ref="SlevomatCodingStandard.ControlStructures.AssignmentInCondition"/>-->
-<!--    <rule ref="SlevomatCodingStandard.ControlStructures.DisallowShortTernaryOperator"/>-->
-<!--    <rule ref="SlevomatCodingStandard.ControlStructures.RequireYodaComparison"/>-->
-<!--    <rule ref="SlevomatCodingStandard.ControlStructures.DisallowEmpty"/>-->
-<!--    <rule ref="SlevomatCodingStandard.TypeHints.DisallowArrayTypeHintSyntax"/>-->
-<!--    <rule ref="SlevomatCodingStandard.TypeHints.DisallowMixedTypeHint"/>-->
-<!--    <rule ref="SlevomatCodingStandard.PHP.UselessParentheses"/>-->
-<!--    <rule ref="SlevomatCodingStandard.Files.TypeNameMatchesFileName"/> project based -->
-<!--    <rule ref="SlevomatCodingStandard.Namespaces.UseOnlyWhitelistedNamespaces"/> project based -->
-<!--    <rule ref="SlevomatCodingStandard.Operators.DisallowIncrementAndDecrementOperators"/>-->
-<!--    <rule ref="SlevomatCodingStandard.Operators.RequireOnlyStandaloneIncrementAndDecrementOperators"/>-->
-<!--    <rule ref="SlevomatCodingStandard.Functions.TrailingCommaInCall"/>-->
-<!--    <rule ref="SlevomatCodingStandard.Functions.UnusedParameter"/>-->
-
-    <!-- 6.0.0 php7.4 -->
-    <rule ref="SlevomatCodingStandard.Functions.RequireArrowFunction"/>
-<!--    <rule ref="SlevomatCodingStandard.Functions.DisallowArrowFunction"/>-->
-<!--    <rule ref="SlevomatCodingStandard.Numbers.RequireNumericLiteralSeparator"/>-->
-    <rule ref="SlevomatCodingStandard.Numbers.DisallowNumericLiteralSeparator"/>
-    <rule ref="SlevomatCodingStandard.PHP.RequireNowdoc"/>
-    <rule ref="SlevomatCodingStandard.PHP.ReferenceSpacing"/>
-    <rule ref="SlevomatCodingStandard.PHP.DisallowReference"/>
-    <rule ref="SlevomatCodingStandard.PHP.RequireExplicitAssertion"/>
-    <rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHint">
-        <properties>
-            <property name="traversableTypeHints" type="array">
-                <element value="Traversable"/>
-            </property>
-        </properties>
-    </rule>
-    <rule ref="SlevomatCodingStandard.TypeHints.PropertyTypeHint">
-        <properties>
-            <property name="traversableTypeHints" type="array">
-                <element value="Traversable"/>
-            </property>
-        </properties>
-    </rule>
-    <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHint">
-        <properties>
-            <property name="traversableTypeHints" type="array">
-                <element value="Traversable"/>
-            </property>
-        </properties>
-    </rule>
-    <rule ref="SlevomatCodingStandard.Commenting.UselessFunctionDocComment">
-        <properties>
-            <property name="traversableTypeHints" type="array">
-                <element value="Traversable"/>
-            </property>
-        </properties>
-    </rule>
+    <!--<rule ref="SlevomatCodingStandard.ControlStructures.EarlyExit"/>-->
+    <!--<rule ref="SlevomatCodingStandard.ControlStructures.AssignmentInCondition"/>-->
+    <!--<rule ref="SlevomatCodingStandard.ControlStructures.DisallowShortTernaryOperator"/>-->
+    <!--<rule ref="SlevomatCodingStandard.ControlStructures.RequireYodaComparison"/>-->
+    <!--<rule ref="SlevomatCodingStandard.ControlStructures.DisallowEmpty"/>-->
+    <!--<rule ref="SlevomatCodingStandard.TypeHints.DisallowArrayTypeHintSyntax"/>-->
+    <!--<rule ref="SlevomatCodingStandard.TypeHints.DisallowMixedTypeHint"/>-->
+    <!--<rule ref="SlevomatCodingStandard.PHP.UselessParentheses"/>-->
+    <!--<rule ref="SlevomatCodingStandard.Files.TypeNameMatchesFileName"/> project based -->
+    <!--<rule ref="SlevomatCodingStandard.Namespaces.UseOnlyWhitelistedNamespaces"/> project based -->
+    <!--<rule ref="SlevomatCodingStandard.Operators.DisallowIncrementAndDecrementOperators"/>-->
+    <!--<rule ref="SlevomatCodingStandard.Operators.RequireOnlyStandaloneIncrementAndDecrementOperators"/>-->
+    <!--<rule ref="SlevomatCodingStandard.Functions.TrailingCommaInCall"/>-->
+    <!--<rule ref="SlevomatCodingStandard.Functions.UnusedParameter"/>-->
+    <!--<rule ref="SlevomatCodingStandard.Functions.RequireArrowFunction"/>-->
+    <!--<rule ref="SlevomatCodingStandard.Functions.DisallowArrowFunction"/>-->
+    <!--<rule ref="SlevomatCodingStandard.Numbers.RequireNumericLiteralSeparator"/>-->
+    <!--<rule ref="SlevomatCodingStandard.Numbers.DisallowNumericLiteralSeparator"/>-->
+    <!--<rule ref="SlevomatCodingStandard.PHP.RequireNowdoc"/>-->
+    <!--<rule ref="SlevomatCodingStandard.PHP.ReferenceSpacing"/>-->
+    <!--<rule ref="SlevomatCodingStandard.PHP.DisallowReference"/>-->
+    <!--<rule ref="SlevomatCodingStandard.PHP.RequireExplicitAssertion"/>-->
+    <!--<rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHint">-->
+    <!--    <properties>-->
+    <!--        <property name="traversableTypeHints" type="array">-->
+    <!--            <element value="Traversable"/>-->
+    <!--        </property>-->
+    <!--    </properties>-->
+    <!--</rule>-->
+    <!--<rule ref="SlevomatCodingStandard.TypeHints.PropertyTypeHint">-->
+    <!--    <properties>-->
+    <!--        <property name="traversableTypeHints" type="array">-->
+    <!--            <element value="Traversable"/>-->
+    <!--        </property>-->
+    <!--    </properties>-->
+    <!--</rule>-->
+    <!--<rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHint">-->
+    <!--    <properties>-->
+    <!--        <property name="traversableTypeHints" type="array">-->
+    <!--            <element value="Traversable"/>-->
+    <!--        </property>-->
+    <!--    </properties>-->
+    <!--</rule>-->
+    <!--<rule ref="SlevomatCodingStandard.Commenting.UselessFunctionDocComment">-->
+    <!--    <properties>-->
+    <!--        <property name="traversableTypeHints" type="array">-->
+    <!--            <element value="Traversable"/>-->
+    <!--        </property>-->
+    <!--    </properties>-->
+    <!--</rule>-->
+    <!--<rule ref="SlevomatCodingStandard.ControlStructures.JumpStatementsSpacing">-->
+    <!--    <properties>-->
+    <!--        <property name="tokensToCheck" type="array">-->
+    <!--            <element value="T_BREAK"/>-->
+    <!--            <element value="T_CONTINUE"/>-->
+    <!--            <element value="T_RETURN"/>-->
+    <!--            <element value="T_THROW"/>-->
+    <!--        </property>-->
+    <!--    </properties>-->
+    <!--</rule>-->
     <rule ref="SlevomatCodingStandard.ControlStructures.BlockControlStructureSpacing">
         <exclude name="SlevomatCodingStandard.ControlStructures.BlockControlStructureSpacing.IncorrectLinesCountBeforeControlStructure"/>
         <properties>
@@ -447,18 +454,8 @@
                 <element value="T_FOREACH"/>
                 <element value="T_SWITCH"/>
                 <element value="T_TRY"/>
-<!--                <element value="T_CASE"/>-->
+                <!--<element value="T_CASE"/>-->
                 <element value="T_DEFAULT"/>
-            </property>
-        </properties>
-    </rule>
-    <rule ref="SlevomatCodingStandard.ControlStructures.JumpStatementsSpacing">
-        <properties>
-            <property name="tokensToCheck" type="array">
-                <element value="T_BREAK"/>
-                <element value="T_CONTINUE"/>
-                <element value="T_RETURN"/>
-                <element value="T_THROW"/>
             </property>
         </properties>
     </rule>
