@@ -38,7 +38,6 @@
 		<exclude name="SlevomatCodingStandard.Namespaces.FullyQualifiedGlobalConstants.NonFullyQualified"/>
 		<exclude name="SlevomatCodingStandard.Namespaces.ReferenceUsedNamesOnly.ReferenceViaFullyQualifiedNameWithoutNamespace"/>
 		<exclude name="SlevomatCodingStandard.TypeHints.TypeHintDeclaration.MissingParameterTypeHint"/>
-		<exclude name="SlevomatCodingStandard.TypeHints.TypeHintDeclaration.MissingParameterTypeHint.WhitespaceBeforeColon"/>
 		<exclude name="SlevomatCodingStandard.Commenting.RequireOneLinePropertyDocComment.MultiLinePropertyComment"/>
 		<exclude name="SlevomatCodingStandard.Commenting.DocCommentSpacing.IncorrectLinesCountBetweenDifferentAnnotationsTypes" />
 		<exclude name="SlevomatCodingStandard.Commenting.DocCommentSpacing.IncorrectLinesCountBetweenDescriptionAndAnnotations" />
@@ -82,11 +81,6 @@
 		<properties>
 			<property name="newlinesCountBetweenOpenTagAndDeclare" value="2"/>
 			<property name="spacesCountAroundEqualsSign" value="0"/>
-		</properties>
-	</rule>
-	<rule ref="SlevomatCodingStandard.TypeHints.TypeHintDeclaration">
-		<properties>
-			<property name="usefulAnnotations" type="array" value="@dataProvider,@todo,@throws"/>
 		</properties>
 	</rule>
 	<rule ref="SlevomatCodingStandard.Namespaces.ReferenceUsedNamesOnly">
