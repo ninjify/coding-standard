@@ -26,10 +26,10 @@ composer require --dev ninjify/coding-standard
 
 ## Versions
 
-| State       | Version      | Branch   | PHP      |
-|-------------|--------------|----------|----------|
-| dev         | `^0.12`      | `master` | `>= 7.2` |
-| stable      | `^0.11`      | `master` | `>= 7.2` |
+| State       | Version      | Branch   | PHP     |
+|-------------|--------------|----------|---------|
+| dev         | `^0.13`      | `master` | `>=7.2` |
+| stable      | `^0.12`      | `master` | `>=7.2` |
 
 ## Documentation
 
