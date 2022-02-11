@@ -1,6 +1,10 @@
 <?xml version="1.0"?>
 <ruleset name="Gamee">
 	<description>Gamee coding standard.</description>
+
+	<!-- PHP version -->
+	<config name="php_version" value="70200"/>
+
 	<rule ref="Generic.WhiteSpace.DisallowSpaceIndent"/>
 	<rule ref="Generic.PHP.LowerCaseConstant"/>
 	<rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
@@ -29,7 +33,6 @@
 		<exclude name="SlevomatCodingStandard.ControlStructures.NewWithParentheses.MissingParentheses"/>
 		<exclude name="SlevomatCodingStandard.Files.TypeNameMatchesFileName"/>
 		<exclude name="SlevomatCodingStandard.Exceptions.ReferenceThrowableOnly"/>
-		<exclude name="SlevomatCodingStandard.Namespaces.FullyQualifiedClassNameAfterKeyword"/>
 		<exclude name="SlevomatCodingStandard.Namespaces.FullyQualifiedGlobalFunctions.NonFullyQualified"/>
 		<exclude name="SlevomatCodingStandard.Namespaces.FullyQualifiedClassNameInAnnotation"/>
 		<exclude name="SlevomatCodingStandard.Namespaces.FullyQualifiedExceptions"/>
@@ -75,12 +78,9 @@
 		<exclude name="SlevomatCodingStandard.Numbers.RequireNumericLiteralSeparator.RequiredNumericLiteralSeparator" />
 		<exclude name="SlevomatCodingStandard.ControlStructures.BlockControlStructureSpacing.IncorrectLinesCountBeforeControlStructure" />
 		<exclude name="SlevomatCodingStandard.ControlStructures.BlockControlStructureSpacing.IncorrectLinesCountAfterControlStructure" />
-	</rule>
-	<rule ref="SlevomatCodingStandard.Classes.UnusedPrivateElements">
-		<properties>
-			<property name="alwaysUsedPropertiesAnnotations" type="array"
-					  value="@ORM\Column,@ORM\ManyToOne,@ORM\OneToMany,@ORM\ManyToMany,@ORM\JoinColumn"/>
-		</properties>
+		<exclude name="SlevomatCodingStandard.Functions.FunctionLength.FunctionLength"/>
+		<exclude name="SlevomatCodingStandard.Files.FunctionLength.FunctionLength"/>
+		<exclude name="SlevomatCodingStandard.Classes.ForbiddenPublicProperty.ForbiddenPublicProperty"/>
 	</rule>
 	<rule ref="SlevomatCodingStandard.Namespaces.UnusedUses">
 		<properties>
