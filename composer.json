@@ -2,7 +2,7 @@
   "name": "ninjify/coding-standard",
   "description": "Tuned & very strict coding standards for PHP projects. Trusted by Contributte, Apitte, Nettrine and many others.",
   "keywords": ["codesniffer", "codestyle", "ninjify", "php"],
-  "type": "library",
+  "type": "phpcodesniffer-standard",
   "license": ["MIT"],
   "homepage": "https://github.com/ninjify/coding-standard",
   "authors": [
